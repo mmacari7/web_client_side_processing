@@ -1,0 +1,17 @@
+{
+  "name": "cs-546-lab-9",
+  "version": "1.0.0",
+  "description": "Detects if number is prime all on client side",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Michael Macari 10432224",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.2"
+  }
+}
