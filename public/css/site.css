@@ -5,3 +5,10 @@ body {
     font-family: Georgia, Cambria, 'Times New Roman', Times, serif;
     font-size: 15pt;
 }
+
+li.is-prime {
+    color: #00E676
+}
+li.not-prime{
+    color: #FF3D00
+}
