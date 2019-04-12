@@ -31,7 +31,7 @@ app.engine('handlebars', handlebarsInstance.engine)
 //app.engine('handlebars', exphbs({defaultLayout: 'main'}))
 app.set('view engine', 'handlebars')
 
-app.use('/', (req, res) => {
+app.get('/', (req, res) => {
     res.render("prime/isprime")
 })
 

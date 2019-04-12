@@ -1,14 +1,63 @@
 /* CSS responsible for styling the site */
 
-body {
+* {
+    margin: 0px;
+}
+
+html, body {
     background: #fefefe;
     font-family: Georgia, Cambria, 'Times New Roman', Times, serif;
     font-size: 15pt;
+    height: 100%;
+}
+
+.page-wrap {
+    min-height: 100%;
+    margin-left: 30px;
+    margin-bottom: -60px;
+}
+
+.page-wrap:after {
+    content: "";
+    display: block;
+}
+
+.site-footer, .page-wrap:after {
+    height: 60px;
+}
+
+.site-footer {
+    text-align: center;
+    background: #3C5DBA;
+}
+
+
+h1 {
+    text-decoration: underline overline;
+    padding-bottom: 20px;
+}
+
+p{
+    color: white;
+    font-size: 12pt;
+}
+
+input, label {
+    display: block;
+    padding: 5px;
+}
+
+
+ol li {
+    list-style-type: upper-roman;
+    padding: 5px;
+    margin-left: 35px;
+    font-size: 14pt;
 }
 
 li.is-prime {
-    color: #00E676
+    color: #00E676;
 }
 li.not-prime{
-    color: #FF3D00
+    color: #FF3D00;
 }

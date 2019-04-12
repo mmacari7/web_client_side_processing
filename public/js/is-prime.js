@@ -30,15 +30,16 @@
 
         // Gets the value inside of the input
         var checkNumber = $("#num-input").val()
-        if(checkPrime(parseInt(checkNumber))){
+        if(checkNumber === ''){
+            alert("Error: No input entered, please enter a number to check")
+        }
+        else if(checkPrime(parseInt(checkNumber))){
             var isPrimeString = "<li class='is-prime'>" + String(checkNumber) + " is a prime number</li>"
             $("#attempts").append(isPrimeString)
-            console.log(isPrimeString)
         }
         else{
             var isnotPrimeString = "<li class='not-prime'>" + String(checkNumber) + " is NOT a prime number</li>"
             $("#attempts").append(isnotPrimeString)
-            console.log("Number is not prime")
         }
 
         // Prevents default submission behavior
